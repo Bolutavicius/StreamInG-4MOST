@@ -1,8 +1,4 @@
-# StreamInG-4MOST
-Stellar Streams in the Inner Galaxy with S-PLUS and 4MOST
-
-## Other info:
-link to overleaf (only view): https://pt.overleaf.com/read/wgsdnykkqbgx#cfe1ec
+# StreamInG@4MOST: Stellar Streams in the Inner Galaxy with S-PLUS and 4MOST
 
 ## Abstract: 
 We propose 4MOST/HRS observations of 2673 stars identified as candidate members of 9 stellar streams in the inner Milky Way, selected from S-PLUS photometry and Gaia DR3 astrometry. The main goals are to: (1) obtain radial velocities to constrain orbits; (2) derive multi-element abundances to identify progenitors and disentangle overlaps; and (3) search for chemical gradients and multiple populations in globular cluster streams. This project will connect halo substructure studies with the chemo-dynamical mapping of the disk and bulge, offering new insights into the Galaxy’s assembly history.
