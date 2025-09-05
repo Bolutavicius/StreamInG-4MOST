@@ -19,11 +19,11 @@ We propose 4MOST/HRS observations of 2673 stars identified as candidate members 
 (X) Galactic  ( ) Extragalactic
 
 ## Which Surveys is this proposal related to?
-  S1  - Milky Way Halo Low Resolution Survey
-  S2  - Milky Way Halo High Resolution Survey
-  S3  - Milky Way Bulge and Disk Low Resolution Survey
-  S4  - Milky Way Bulge and Disk Low Resolution Survey
-  S14 - The 4MOST Survey of Dwarf Galaxies and their Stellar Streams
+  - S1  - Milky Way Halo Low Resolution Survey
+  - S2  - Milky Way Halo High Resolution Survey
+  - S3  - Milky Way Bulge and Disk Low Resolution Survey
+  - S4  - Milky Way Bulge and Disk Low Resolution Survey
+  - S14 - The 4MOST Survey of Dwarf Galaxies and their Stellar Streams
 
 ## Which other supplementary target proposals is this proposal related to?
 None
