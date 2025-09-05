@@ -1,16 +1,19 @@
 # StreamInG-4MOST
 Stellar Streams in the Inner Galaxy with S-PLUS and 4MOST
 
+## Other info:
+link to overleaf (only view): https://pt.overleaf.com/read/wgsdnykkqbgx#cfe1ec
+
 ## Abstract: 
-xxx
+We propose 4MOST/LRS observations of 2673 stars identified as candidate members of 9 stellar streams in the inner Milky Way, selected from S-PLUS photometry and Gaia DR3 astrometry. The main goals are to: (1) obtain radial velocities to constrain orbits; (2) derive multi-element abundances to identify progenitors and disentangle overlaps; and (3) search for chemical gradients and multiple populations in globular cluster streams. This project will connect halo substructure studies with the chemo-dynamical mapping of the disk and bulge, offering new insights into the Galaxy’s assembly history.
 
 ## Dataset Description
 
-This dataset contains astronomical targets selected for observation with the 4MOST spectrograph (4-metre Multi-Object Spectroscopic Telescope). The file XXX includes a compilation of YYY candidate members of stellar streams, selected using S-PLUS and Gaia, with their celestial coordinates, magnitudes, and other properties relevant for spectroscopic observations.
+This dataset contains astronomical targets selected for observation with the 4MOST spectrograph (4-metre Multi-Object Spectroscopic Telescope). The file ['4most_streams_targets.csv'](4most_streams_targets.csv) includes a compilation of 2673 candidate members of stellar streams, selected using S-PLUS and Gaia, with their celestial coordinates, magnitudes, and other properties relevant for spectroscopic observations.
 
 ## FITS File Structure
 
-The main file XXX contains a binary table with multiple columns describing the properties of the target objects. The data is formatted according to 4MOST requirements for observation proposals.
+The main file ['4most_streams_targets.csv'](4most_streams_targets.csv) contains a binary table with multiple columns describing the properties of the target objects. The data is formatted according to 4MOST requirements for observation proposals.
 
 ## Column Descriptions
 
@@ -53,8 +56,15 @@ This catalog was compiled as part of a project studying stellar streams accreted
 
 ## Target Selection Criteria
 
-XXX
+The StreamInG@4MOST targes were selected following the process summarized below
 
+  - Initial selection from S-PLUS iDR6 with S/N $>3$ in at least one broad band and complete photometry in all 12 filters and with 12 < r < 16 mag.
+  - Cross-match with Gaia DR3 to obtain astrometry and kinematics. Also used the gaia catalog to correct for dust extinction.
+  - Application of our photometric classification method (Bolutavicius et al., in prep.) to identify stars likely accreted or unevolved.
+  - Identification of candidate stream members with galstreams, requiring chi² consistency at the 8 sigma level.
+  - Final restriction to streams with > 20 members.
+
+That left us with 2673 stars, distributed in the parent streams 20.0-1-M18, Corvus-M18, Gaia-3-M18, M30-S20, NGC 5053-L06, NGC 6362-S20, Palca-S18, Parallel-W18 and Yangtze-Y23.
 
 ### Figures
 
