@@ -1,7 +1,7 @@
 # StreamInG@4MOST: Stellar Streams in the Inner Galaxy with S-PLUS and 4MOST
 
 ## Abstract: 
-We propose 4MOST/HRS observations of 2673 stars identified as candidate members of 9 stellar streams in the inner Milky Way, selected from S-PLUS photometry and Gaia DR3 astrometry. The main goals are to: (1) obtain radial velocities to constrain orbits; (2) derive multi-element abundances to identify progenitors and disentangle overlaps; and (3) search for chemical gradients and multiple populations in globular cluster streams. This project will connect halo substructure studies with the chemo-dynamical mapping of the disk and bulge, offering new insights into the Galaxy’s assembly history.
+We propose 4MOST/HRS observations of 2670 stars identified as candidate members of 9 stellar streams in the inner Milky Way, selected from S-PLUS photometry and Gaia DR3 astrometry. The main goals are to: (1) obtain radial velocities to constrain orbits; (2) derive multi-element abundances to identify progenitors and disentangle overlaps; and (3) search for chemical gradients and multiple populations in globular cluster streams. This project will connect halo substructure studies with the chemo-dynamical mapping of the disk and bulge, offering new insights into the Galaxy’s assembly history.
 
 ## PI and CoIs
   - PI: Fábio R. Herpich (LNA - Brazil)
@@ -38,8 +38,8 @@ The main file [4MOST_StreamInG_targets_HRS.fits](4MOST_StreamInG_targets_HRS.fit
 |-------|------|-------------|------|
 | 0 | INDEX | Row index in the table | Long |
 | 1 | NAME | Object identifier | String |
-| 2 | RA | Right ascension (J2000) in degrees | Double |
-| 3 | DEC | Declination (J2000) in degrees | Double |
+| 2 | RA | Right ascension (J2027) in degrees | Double |
+| 3 | DEC | Declination (J2027) in degrees | Double |
 | 4 | PMRA | Proper motion in RA (mas/year) | Double |
 | 5 | PMDEC | Proper motion in DEC (mas/year) | Double |
 | 6 | EPOCH | Position epoch | Double |
@@ -61,7 +61,7 @@ The main file [4MOST_StreamInG_targets_HRS.fits](4MOST_StreamInG_targets_HRS.fit
 | 22 | REDSHIFT_ERROR | Estimated redshift error | Double |
 | 23 | TEMPLATE_REDSHIFT | Template redshift | Double |
 | 24-32 | CAL_MAG_* | Calibrated magnitudes in different bands | Double |
-| 33 | CLASSIFICATION | Object classification (GAL = galaxy) | String |
+| 33 | CLASSIFICATION | Object classification | String |
 | 34 | COMPLETENESS | Observation completeness | Double |
 | 35 | PARALLAX | Object parallax | Double |
 
@@ -81,7 +81,7 @@ The StreamInG@4MOST targes were selected following the process summarized below
   - Identification of candidate stream members with galstreams, requiring chi² consistency at the 8 sigma level.
   - Final restriction to streams with > 20 members.
 
-That left us with 2673 stars, distributed in the parent streams 20.0-1-M18, Corvus-M18, Gaia-3-M18, M30-S20, NGC 5053-L06, NGC 6362-S20, Palca-S18, Parallel-W18 and Yangtze-Y23.
+That left us with 2670 stars, distributed in the parent streams 20.0-1-M18, Corvus-M18, Gaia-3-M18, M30-S20, NGC 5053-L06, NGC 6362-S20, Palca-S18, Parallel-W18 and Yangtze-Y23.
 
 ### Figures
 
