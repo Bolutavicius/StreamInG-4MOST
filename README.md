@@ -26,7 +26,7 @@ None
 
 ## Dataset Description
 
-This dataset contains astronomical targets selected for observation with the 4MOST spectrograph (4-metre Multi-Object Spectroscopic Telescope). The file [4MOST_StreamInG_targets_HRS.fits](4MOST_StreamInG_targets_HRS.fits) includes a compilation of 2673 candidate members of stellar streams, selected using S-PLUS and Gaia, with their celestial coordinates, magnitudes, and other properties relevant for spectroscopic observations.
+This dataset contains astronomical targets selected for observation with the 4MOST spectrograph (4-metre Multi-Object Spectroscopic Telescope). The file [4MOST_StreamInG_targets_HRS.fits](4MOST_StreamInG_targets_HRS.fits) includes a compilation of 2670 candidate members of stellar streams, selected using S-PLUS and Gaia, with their celestial coordinates, magnitudes, and other properties relevant for spectroscopic observations.
 
 ## FITS File Structure
 
