@@ -1,0 +1,141 @@
+-----------------------------------------------------------------------
+
+Survey: StreamInG@4MOST
+
+We propose 4MOST/HRS observations of stars identified as candidate
+members of 9 stellar streams in the inner Milky Way, selected from
+S-PLUS photometry and Gaia DR3 astrometry. This project will connect
+halo substructure studies with the chemo-dynamical mapping of the disk
+and bulge, offering new insights into the Galaxy’s assembly history.
+
+2760 HR targets*
+
+========================================================================
+
+1. Target Catalog Overview
+
+Title: Stellar Streams in the Inner Galaxy with S-PLUS and 4MOST
+
+Contact person: Fabio R. Herpich, Claudia M. de Oliveira
+Contact e-mail: fherpich@lna.br, claudia.oliveira@iag.usp.br
+
+Brief science goal description
+------------------------------
+The main goals are to: (1) obtain radial velocities to constrain orbits;
+(2) derive multi-element abundances to identify progenitors and disentangle
+overlaps; and (3) search for chemical gradients and multiple populations in
+globular cluster streams.
+
+------------------------------------------------------------------------
+1.1 Source of target catalogue selection
+
+Our data were obtained via a crossmatch between the catalog of the third
+data release (DR3) of Gaia (Gaia Collaboration et al., 2023) and a catalog
+of the sixth internal data release (iDR6) of S-PLUS (constructed by joining
+the individual fields).
+
+The Gaia DR3 catalog can be accessed at
+    https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=I/355/gaiadr3
+The S-PLUS dr6 is, for now, only available internally to its collaboration
+but will soon be available publicly at the splus.cloud database.
+
+------------------------------------------------------------------------
+1.2 Target selection overview:
+
+The selection criteria can be summarized as follows:
+
+[  i] An initial selection from S-PLUS iDR6 with S/N > 3 in at least one
+      broad band (u, g, r, i or z) and complete photometry in all 12 filters,
+      and with 12 < g < 16 mag.
+[ ii] Then a cross-match with Gaia DR3 to obtain astrometry and kinematics.
+      We also used the Gaia catalog to correct for dust extinction.
+[iii] Application of our photometric classification method to identify stars
+      likely accreted or unevolved ones (Bolutavicius et al., in prep.).
+[ iv] Identification of candidate stream members with galstreams (Mateu, 2023),
+      requiring χ2 consistency at the < 8 sigma level.
+[  v] Final restriction to streams with at least 20 (candidate) members.
+
+This resulted in 2670* stars to be observed.
+
+------------------------------------------------------------------------
+1.3 Target coordinates, proper motion, and parallaxes
+
+The proper motions and parallaxes were obtained from the Gaia DR3 catalog.
+The target coordinates were obtained from S-PLUS iDR6 but converted from
+EPOCH J2000 to J2027 using Astropy (SkyCoord.apply_space_motion).
+
+------------------------------------------------------------------------
+1.4 Target photometry
+
+The photometry for the r band of S-PLUS iDR6 (provided in the target catalog
+under MAG) was obtained using auto apertures (adaptive elliptical apertures
+based on the Kron radius) for halo fields and using PSF photometry (for disk/bulge
+fields). The process is very similar to what was described for the DR4 in
+Herpich et al. (2024).
+
+Although we used reddening-corrected magnitudes in the selection (e.g. when
+classifying the stars into accreted and in situ), the values provided in the
+target catalog are just as observed, i.e., NOT corrected for dust extinction.
+
+------------------------------------------------------------------------
+1.5 Redshifts
+
+Not included.
+
+------------------------------------------------------------------------
+1.6 Reddening
+
+For convenience, we used the A_G values provided by the Gaia DR3 catalog
+itself. We first converted those values to A_v = A_G / 0.87 and then converted
+from A_v to A_{filter}. We used these last values to correct our initial
+catalog for the dust extinction and perform the calculations correctly during
+the selection process. But, again, the values given under the MAG column are
+NOT corrected for the reddening.
+
+The filter ratios were obtained from SVO (Rodrigo et al, 2012). For example,
+the values for A_G/A_v and A_uSPLUS/A_v were obtained from, respectively:
+https://svo2.cab.inta-csic.es/theory/fps/index.php?id=GAIA/GAIA3.G&&mode=browse&gname=GAIA&gname2=GAIA3#filter
+https://svo2.cab.inta-csic.es/theory/fps/index.php?id=CTIO/S-PLUS.u&&mode=browse&gname=CTIO&gname2=S-PLUS#filter
+
+The values provided in the catalog under REDDENING are simply A_v/R_v,
+assuming a R_v = 3.1.
+
+------------------------------------------------------------------------
+1.7 Spectral templates
+
+ST_TEMPLATE.fits
+
+------------------------------------------------------------------------
+1.8. Known connections to other sub-surveys
+
+This sub-survey is thematically related to the following surveys:
+S1  - Milky Way Halo Low Resolution Survey
+S2  - Milky Way Halo High Resolution Survey
+S3  - Milky Way Bulge and Disk Low Resolution Survey
+S4  - Milky Way Bulge and Disk High Resolution Survey
+S14 - The 4MOST Survey of Dwarf Galaxies and their Stellar Streams
+
+------------------------------------------------------------------------
+1.9. Any additional information
+
+* The number of targets proposed was originally 2673 stars but 3 were later
+removed due to being duplicated sources.
+
+------------------------------------------------------------------------
+1.10. References
+
+[1] Gaia Collaboration, “Gaia Data Release 3. Summary of the content and
+    survey properties”, A&A, vol. 674, Art. no. A1, EDP, 2023.
+    doi:10.1051/0004-6361/202243940.
+
+[2] C. Mateu. galstreams: A library of Milky Way stellar stream footprints
+    and tracks. , 520(4):5225–5258, Apr. 2023. doi: 10.1093/mnras/stad321.
+
+[3] Herpich, F. R., “The Fourth S-PLUS Data Release: 12-filter photometry
+    covering  3000 square degrees in the southern hemisphere”, A&A, vol.
+    689, Art. no. A249, EDP, 2024. doi:10.1051/0004-6361/202449725.
+
+[4] Rodrigo, C., Solano, E., and Bayo, A., “SVO Filter Profile Service
+    Version 1.0”, ivoa.rept, 2012. doi:10.5479/ADS/bib/2012ivoa.rept.1015R.
+
+========================================================================
